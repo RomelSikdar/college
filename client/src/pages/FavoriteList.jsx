@@ -34,7 +34,7 @@ const FavoriteItem = ({ media, onRemoved }) => {
     <MediaItem media={media} mediaType={media.mediaType} />
     <LoadingButton
       fullWidth
-      variant="contained"
+      variant="outlined"
       sx={{ marginTop: 2 }}
       startIcon={<DeleteIcon />}
       loadingPosition="start"

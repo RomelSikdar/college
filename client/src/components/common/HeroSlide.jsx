@@ -167,7 +167,7 @@ const HeroSlide = ({ mediaType, mediaCategory }) => {
                     to={routesGen.mediaDetail(mediaType, movie.id)}
                     sx={{ width: "max-content" }}
                   >
-                    watch now
+                  watch trailer
                   </Button>
                   {/* buttons */}
                 </Stack>

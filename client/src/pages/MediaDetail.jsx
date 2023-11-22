@@ -169,7 +169,7 @@ const MediaDetail = () => {
                       <Chip
                         label={genre.name}
                         variant="filled"
-                        color="primary"
+                        color="secondary"
                         key={index}
                       />
                     ))}
@@ -179,7 +179,7 @@ const MediaDetail = () => {
 
                   {/* overview */}
                   <Typography
-                    variant="body1"
+                    variant="body2"
                     sx={{ ...uiConfigs.style.typoLines(5) }}
                   >
                     {media.overview}
@@ -201,13 +201,13 @@ const MediaDetail = () => {
                       onClick={onFavoriteClick}
                     />
                     <Button
-                      variant="contained"
+                      variant="outlined"
                       sx={{ width: "max-content" }}
                       size="large"
                       startIcon={<PlayArrowIcon />}
                       onClick={() => videoRef.current.scrollIntoView()}
                     >
-                      watch now
+                      watch trailer
                     </Button>
                   </Stack>
                   {/* buttons */}

@@ -85,7 +85,7 @@ const Topbar = () => {
                 </Button>
               ))}
               <IconButton
-                sx={{ color: "inherit" }}
+                sx={{ color: "orange" }}
                 onClick={onSwithTheme}
               >
                 {themeMode === themeModes.dark && <DarkModeOutlinedIcon />}
@@ -97,7 +97,7 @@ const Topbar = () => {
             {/* user menu */}
             <Stack spacing={3} direction="row" alignItems="center">
               {!user && <Button
-                variant="contained"
+                variant="outlined"
                 onClick={() => dispatch(setAuthModalOpen(true))}
               >
                 sign in

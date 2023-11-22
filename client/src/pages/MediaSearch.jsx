@@ -76,7 +76,7 @@ const MediaSearch = () => {
               <Button
                 size="large"
                 key={index}
-                variant={mediaType === item ? "contained" : "text"}
+                variant={mediaType === item ? "outlined" : "text"}
                 sx={{
                   color: mediaType === item ? "primary.contrastText" : "text.primary"
                 }}
@@ -87,7 +87,7 @@ const MediaSearch = () => {
             ))}
           </Stack>
           <TextField
-            color="success"
+            color="info"
             placeholder="Search MoonFlix"
             sx={{ width: "100%" }}
             autoFocus
